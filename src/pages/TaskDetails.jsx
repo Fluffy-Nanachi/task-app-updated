@@ -83,7 +83,8 @@ function TaskDetails() {
             <div className="bg-white p-4 rounded text-sm">
               <div className="flex justify-between items-start mb-3">
                 <div className="font-semibold">Details</div>
-                <div className="text-xs text-gray-500">
+                <div className="text-xs text-gray-500 flex">
+                  <div className="text-black font-bold px-2">Due Date:</div>
                   {formatDate(task.date)}
                 </div>
               </div>

@@ -137,7 +137,7 @@ function Tasks() {
                         <Link
                           to={`/all-tasks/${task.id}`}
                           state={{ task }}
-                          className="font-semibold text-sm text-blue-700 hover:underline"
+                          className="font-semibold text-sm text-blue-700 cursor-pointer hover:underline"
                         >
                           {task.title}
                         </Link>
@@ -153,13 +153,13 @@ function Tasks() {
                     <div className="flex  items-end ml-4 gap-4">
                       <button
                         onClick={() => startEdit(task)}
-                        className="text-blue-600 text-sm"
+                        className="text-blue-600 text-sm cursor-pointer hover:underline"
                       >
                         Edit
                       </button>
                       <button
                         onClick={() => deleteTask(task.id)}
-                        className="text-red-600 text-sm"
+                        className="text-red-600 text-sm cursor-pointer hover:underline"
                       >
                         Delete
                       </button>
